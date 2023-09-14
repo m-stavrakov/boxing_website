@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap');
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primary-color-text: #000;
+    --primary-color-contrast: #0FFF50;
+    --font-size: 1.8rem;
+}
+
+body{
+    background-color: var(--primary-color-text);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    max-width: 1900px;
+}
+
+.navigation{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo{
+    width: 80px;
+    border-radius: 50%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 5px;
+    background-color: var(--primary-color-contrast);
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color-text);
+}
+
+.nav_right_section{
+    padding-right: 20px;
+}
+
+li{
+    position: relative;
+}
+
+li::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color-text);
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+}
+
+li:hover::after{
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    transition: all ease 0.2s;
+    border: 1px solid var(--primary-color-contrast);
+    box-shadow: 0px 5px 10px 0px var(--primary-color-contrast); 
+}
+
+.about:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 10px 20px 2px var(--primary-color-contrast);
+}
+
+.img_about{
+    max-width: 40%;
+    border-radius: 14px 0 0 14px;
+    /* height: 300px;
+    width: 300px; */
+}
+
+.about_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.about_header{
+    color: var(--primary-color-contrast);
+    text-shadow: 9px 1px 15px rgba(207, 255, 220, 1);
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.about_text{
+    padding-right: 10px;
+}
+
+.about_socials{
+    display: flex;
+    gap: 90px;
+    justify-content: space-evenly;
+    padding: 20px 0 20px 0;
+    width: 100%;
+}
+
+.about_socials>a{
+    color: var(--primary-color-contrast);
+}

@@ -10,6 +10,7 @@
     --primary-color-text: #000;
     --primary-color-contrast: #0FFF50;
     --font-size: 1rem;
+    --small-font-size: .8rem;
 }
 
 body{
@@ -18,6 +19,8 @@ body{
     font-family: 'Poppins', sans-serif;
     max-width: 2200px;
 }
+
+/* nav bar */
 
 .navigation{
     position: sticky;
@@ -77,6 +80,8 @@ li:hover::after{
     transform-origin: center;
 }
 
+/* about section */
+
 .about{
     margin: 40px 0 40px 100px;
     border-radius: 15px;
@@ -116,6 +121,7 @@ h2{
     font-size: 2.3rem;
     font-weight: 700;
     text-transform: capitalize;
+    -webkit-text-stroke: .5px var(--primary-color-text);
 }
 
 .about_text{
@@ -141,6 +147,8 @@ h2{
     color: var(--primary-color-contrast);
 }
 
+/* training section */
+
 .training{
     margin: 60px 50px 40px 300px;
     border-radius: 15px;
@@ -161,16 +169,18 @@ h2{
     margin: 10px 0 20px 20px;
 }
 
-#annual_membership{
+.small_text{
     margin-top: 10px;
     font-style: italic;
-    font-size: .8rem;
+    font-size: var(--small-font-size);
 }
 
 .img_training{
     width: 40%;
     border-radius: 0 14px 14px 0;
 }
+
+/* classes section */
 
 .classes_text{
     text-align: center;
@@ -181,7 +191,7 @@ h2{
 
 .new_joiners{
     text-align: center;
-    font-size: var(--font-size);
+    font-size: var(--small-font-size);
     padding: 0 60px 30px 60px;
     font-style: italic;
 }
@@ -198,7 +208,13 @@ h2{
 }
 
 .class_type{
-    color: white;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.border_top{
+    box-shadow: 0 0 10px var(--primary-color-contrast);
+    clip-path: inset(-30px 0 0 0);
 }
 
 tr{
@@ -207,10 +223,22 @@ tr{
     gap: 10px;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
+    text-align: center;
 }
 
 th{
     font-size: 1.5rem;
+    -webkit-text-stroke: .5px #0FFF50;
+}
+
+td{
+    text-transform: capitalize;
+}
+
+.classes_time{
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .table_box{
@@ -218,7 +246,7 @@ th{
     transition: all ease 0.2s;
     border: 1px solid var(--primary-color-contrast);
     box-shadow: 0px 5px 10px 0px var(--primary-color-contrast); 
-    width: 15%;
+    width: 16%;
 }
 
 .table_box:hover{

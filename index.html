@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/1e16c8ff60.js" crossorigin="anonymous"></script>
     <title>Boxing Website</title>
 </head>
-
+<!-- as a background place some decorations or patterns like gloves repeated or something of sort -->
 <body>
     <!-- navigation bar -->
     <section class="navigation">
@@ -28,23 +28,25 @@
 
     <!-- about section -->
 <section id="about_section" class="about">
-        <img class="img_about" src="./images/male_boxing.jpg" alt="picture of boxer">
-        <div class="about_box">
-            <h2 class="about_header">
-                About Us
-            </h2>
-            <p class="about_text">Welcome to <span class="club_name">Surbiton Boxing Club</span>, your local community-based amateur sports club dedicated to promoting fitness 
-                and well-being through the art of boxing.
-                Established in 2010, <span class="club_name">Surbiton Boxing Club</span> proudly holds affiliation with the esteemed England Boxing organization. 
-                Our primary mission is to foster a secure and nurturing atmosphere for the development and coaching of Olympic-style boxing techniques.
-            </p>
-
-            <div class="about_socials">
-                <a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+<div class="container">
+            <img class="img_about" src="./images/male_boxing.jpg" alt="picture of boxer">
+            <div class="about_box">
+                <h2>
+                    About Us
+                </h2>
+                <p class="about_text">Welcome to <span class="club_name">Surbiton Boxing Club</span>, your local community-based amateur sports club dedicated to promoting fitness 
+                    and well-being through the art of boxing.
+                    Established in 2010, <span class="club_name">Surbiton Boxing Club</span> proudly holds affiliation with the esteemed England Boxing organization. 
+                    Our primary mission is to foster a secure and nurturing atmosphere for the development and coaching of Olympic-style boxing techniques.
+                </p>
+    
+                <div class="about_socials">
+                    <a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+                </div>
             </div>
-        </div>
+</div>
 </section>
 
 <!-- add a youtube video of boxing -->
@@ -52,7 +54,7 @@
 <!-- training section -->
 <section id="training_section" class="training">
     <div class="container">
-        <div class="training_text">
+        <div class="training_box">
             <h2>Training with us</h2>
             <p>At the heart of our training program is a dedicated and tightly-knit team of highly qualified coaches. Each session is carefully 
                 guided and enriched with their invaluable advice and expertise. 
@@ -60,131 +62,127 @@
                 Under the guidance of our Head Coach and the coaching team collaborate to shape a 
                 comprehensive boxing training program that emphasizes fundamental excellence.
             </p>
-            <p> In our meticulously structured classes, you will gain mastery over the core elements of Olympic-style boxing. 
-                As you progress and develop your skills, our club offers the opportunity for carded boxers to proudly represent Surbiton A.B.C. on regional, 
-                national, and international stages, making your boxing journey truly rewarding.
-            </p>
             <p id="annual_membership">
                 An annual club membership - costing £30 - is required from the 4th session onwards. 
                 Competitive boxers will require a membership to England Boxing along with Surbiton ABC annual membership
             </p>
         </div>
-        <img src="./images/sessions.jpg" alt="training">
+        <img class="img_training" src="./images/sessions.jpg" alt="training">
     </div>
 </section>
 
 <!-- Classes section -->
 <section id="classes_section" class="classes">
     <div class="classes_description">
-        <h2 class="classes_title">Classes Schedule</h2>
-        <p>Here in <span class="club_name">surbiton boxing club</span> all boxers aged 10 and above are welcomed. We have separated our classes based on
-        ability &amp; age groups. In order to produce a high standard of competitive boxers, amateur boxing classes and recreational keep-fit <span>classes
+        <h2>Classes Schedule</h2>
+        <p class="classes_text">Here in <span class="club_name">surbiton boxing club</span> all boxers <span class="important_text">aged 10 and above</span> are welcomed. We have separated our classes based on
+        ability &amp; age groups. In order to produce a high standard of competitive boxers, amateur boxing classes and recreational keep-fit <span class="important_text">classes
         are kept separate.</span></p>
         <p class="new_joiners">New joiners should visit the club to register interest before starting any training at <span class="club_name">surbiton boxing
         club</span></p>
     </div>
     <div class="classes_table">
-        <table class="table_monday">
-            <tr>
-                <th>Monday</th>
-            </tr>
-            <tr>
-                <td>17:15 - 18:15</td>
-                <td><a href="#">keep-fit boxing</a></td>
-                <td>beginners and novice</td>
-            </tr>
-            <tr>
-                <td>18:30 - 19:30</td>
-                <td><a href="#">keep-fit boxing</a></td>
-                <td>high intensity training</td>
-            </tr>
-            <tr>
-                <td>19:45 - 20:45</td>
-                <td><a href="#">keep-fit boxing</a></td>
-                <td>training camp</td>
-            </tr>
-        </table>
+            <table class="table_box">
+                <tr>
+                    <th>Monday</th>
+                </tr>
+                <tr>
+                    <td><span class="important_text">17:15 - 18:15</span></td>
+                    <td><a class="class_type" href="#">keep-fit boxing</a></td>
+                    <td>beginners and novice</td>
+                </tr>
+                <tr>
+                    <td><span class="important_text">18:30 - 19:30</span></td>
+                    <td><a class="class_type" href="#">keep-fit boxing</a></td>
+                    <td>high intensity training</td>
+                </tr>
+                <tr>
+                    <td><span class="important_text">19:45 - 20:45</span></td>
+                    <td><a class="class_type" href="#">keep-fit boxing</a></td>
+                    <td>training camp</td>
+                </tr>
+            </table>
 
-        <table class="table_tuesday">
+        <table class="table_box">
             <tr>
                 <th>Tuesday</th>
             </tr>
             <tr>
                 <td>17:00 - 18:00</td>
-                <td><a href="#">amateur boxing junior</a></td>
+                <td><a class="class_type" href="#">amateur boxing junior</a></td>
                 <td>all abilities</td>
             </tr>
             <tr>
                 <td>18:00 - 19:15</td>
-                <td><a href="#">amateur boxing youth</a></td>
+                <td><a class="class_type" href="#">amateur boxing youth</a></td>
                 <td>development class</td>
             </tr>
             <tr>
                 <td>19:45 - 20:45</td>
-                <td><a href="#">amateur boxing senior</a></td>
+                <td><a class="class_type" href="#">amateur boxing senior</a></td>
                 <td>carded boxers only</td>
             </tr>
         </table>
 
-        <table class="table_wednesday">
+        <table class="table_box">
             <tr>
                 <th>Wednesday</th>
             </tr>
             <tr>
                 <td>17:15 - 18:15</td>
-                <td><a href="#">keep-fit boxing</a></td>
+                <td><a class="class_type" href="#">keep-fit boxing</a></td>
                 <td>beginners and novice</td>
             </tr>
             <tr>
                 <td>18:30 - 19:30</td>
-                <td><a href="#">keep-fit boxing</a></td>
+                <td><a class="class_type" href="#">keep-fit boxing</a></td>
                 <td>high intensity training</td>
             </tr>
             <tr>
                 <td>19:45 - 20:45</td>
-                <td><a href="#">keep-fit boxing</a></td>
+                <td><a class="class_type" href="#">keep-fit boxing</a></td>
                 <td>training camp</td>
             </tr>
         </table>
 
-        <table class="table_thursday">
+        <table class="table_box">
             <tr>
                 <th>Thursday</th>
             </tr>
             <tr>
                 <td>17:00 - 18:00</td>
-                <td><a href="#">amateur boxing junior</a></td>
+                <td><a class="class_type" href="#">amateur boxing junior</a></td>
                 <td>all abilities</td>
             </tr>
             <tr>
                 <td>18:00 - 19:15</td>
-                <td><a href="#">amateur boxing youth</a></td>
+                <td><a class="class_type" href="#">amateur boxing youth</a></td>
                 <td>development class</td>
             </tr>
             <tr>
                 <td>19:45 - 20:45</td>
-                <td><a href="#">amateur boxing senior</a></td>
+                <td><a class="class_type" href="#">amateur boxing senior</a></td>
                 <td>carded boxers only</td>
             </tr>
         </table>
 
-        <table class="table_saturday">
+        <table class="table_box">
             <tr>
                 <th>Saturday</th>
             </tr>
             <tr>
                 <td>9:15 - 10:15</td>
-                <td><a href="#">boxing awards</a></td>
+                <td><a class="class_type" href="#">boxing awards</a></td>
                 <td>sign up required</td>
             </tr>
             <tr>
                 <td>10:30 - 11:45</td>
-                <td><a href="#">amateur boxing junior &amp; youth</a></td>
+                <td><a class="class_type" href="#">amateur boxing junior &amp; youth</a></td>
                 <td>beginners and novice</td>
             </tr>
             <tr>
                 <td>19:45 - 20:45</td>
-                <td><a href="#">keep-fit boxing</a></td>
+                <td><a class="class_type" href="#">keep-fit boxing</a></td>
                 <td>all abilities</td>
             </tr>
         </table>
@@ -221,7 +219,7 @@
     </div>
 
     <div class="shop_mouth-guard">
-        <img src="./images/mouth-guard.jpg.webp" alt="boxing gloves">
+        <img src="./images/mouth-guard.jpg.webp" alt="boxing gloves" width="200px">
 
         <div class="shop_mouth-guard__text">
             <p class="mouth-guard_description">SAFEJAWZ® 'Fangz' Mouthguard - Protection with Personality. The revolutionary new sports mouthguard that through all of its advanced product features, boasts a very comfortable fit and optimum protection for ALL sports.</p>

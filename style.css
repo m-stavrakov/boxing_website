@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Skranji&display=swap');
 *, *::before, *::after{
     margin: 0;
     padding: 0;
@@ -30,8 +31,26 @@ body{
 }
 
 .logo{
-    width: 80px;
-    border-radius: 50%;
+    font-family: 'Skranji', sans-serif;
+    font-size: 3rem;
+    color: var(--primary-color-text);
+    text-transform: capitalize;
+    margin-left: 20px;
+    position: relative;
+    cursor: default;
+}
+
+.logo span{
+    position: relative;
+    display: inline-block;
+    animation: flip 2s ease-in-out;
+    animation-delay: calc(.2s * var(--i));
+}
+
+@keyframes flip{
+    0%,80%{
+        transform: rotateY(360deg);
+    }
 }
 
 nav{
@@ -135,7 +154,7 @@ h2{
 
 .club_name{
     text-transform: uppercase;
-    text-decoration: underline;
+    color: var(--secondary-color);
 }
 
 .about_socials{
@@ -337,4 +356,84 @@ h3{
 .btn:hover{
     background-color: var(--secondary-color);
     border: 3px solid var(--primary-color-contrast);
+}
+
+/* contact section */
+
+#contact_section{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+} 
+
+.contact_img{
+    max-width: 100%;
+    border: 1px solid var(--primary-color-contrast);
+    border-radius: 15px 0 0 15px;
+}
+
+.form_contact{
+    display: flex;
+    box-shadow: 0px 5px 10px 0px var(--primary-color-contrast); 
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    background: var(--primary-color-contrast);
+    padding: 10px 10px;
+    border-radius: 0 15px 15px 0;
+}
+
+label{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color-text);
+    font-weight: 600;
+}
+
+input{
+    border: solid 1px var(--primary-color-text);
+    padding: 5px;
+    border-radius: .25rem;
+}
+
+select{
+    border: solid 1px var(--primary-color-text);
+    padding: 5px;
+}
+
+.form_btn{
+    cursor: pointer;
+    background: var(--primary-color-text);
+    color: var(--primary-color-contrast);
+    border: none;
+    width: 60%;
+    padding: 5px 5px;
+    margin-top: 20px;
+    align-self: center;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+}
+
+.form_btn:hover{
+    /* border: .5px solid var(--primary-color-text); */
+    background: var(--secondary-color);
+    color: var(--primary-color-text);
+    text-transform: uppercase;
+}
+
+.form_contact:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 10px 20px 2px var(--primary-color-contrast);
+}
+
+#shop_section{
+    padding-top: 80px;
+    margin-top: -80px;
 }

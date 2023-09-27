@@ -8,11 +8,8 @@
 }
 
 :root{
-    /* --primary-color: #000; */
     --primary-color: #00539C;
-    /* --primary-color-contrast: #0FFF50; */
     --primary-color-contrast: #EEA47F;
-    /* --secondary-color: #cfffdc; */
     --secondary-color:#f1b698;
     --font-size: 1rem;
     --small-font-size: .8rem;
@@ -22,7 +19,15 @@ body{
     background-color: var(--primary-color);
     color: white;
     font-family: 'Poppins', sans-serif;
-    max-width: 2200px;
+    /* max-width: 2200px; */
+    margin: 0;
+}
+
+.box{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
 }
 
 /* nav bar */
@@ -246,13 +251,13 @@ h2{
     font-style: italic;
     font-weight: 600;
     position: relative;
-    max-width: 38%;
+    width: 100%;
 }
 
 .link::after{
     content: '';
     position: absolute;
-    width: 100%;
+    width: 35%;
     transform: scaleX(0);
     height: 3px;
     bottom: -4px;
@@ -536,8 +541,8 @@ footer{
 }
 
 iframe{
-    width: 600px;
-    height: 400px;
+    max-width: 100%;
+    height: 40vh;
 }
 
 h1{
@@ -556,3 +561,74 @@ h4{
 .email{
     text-decoration: underline;
 }
+
+@media screen and (767px <= width <= 1023px){
+    .box{
+        display: flex;
+        flex-direction: column;
+        margin: 40px auto;
+        justify-content: space-between;
+        /* margin: 40px 0; */
+    }
+
+    .img_about{
+        max-width: 100%;
+        border-radius: 14px 14px 0 0;
+    }
+
+    .about_box{
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+    .img_training{
+        width: 100%;
+        height: 330.66px;
+        border-radius:0 0 14px 14px;
+        object-fit: cover;
+        object-position: 100% 0%;
+    }
+
+    .training_box{
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+    .classes_main--img{
+        width: 101.5%;
+        height: 330.66px;
+        border-radius: 13px 13px 0 0;
+    }
+
+    .classes_main--text{
+        padding: 0 20px 20px 20px;
+        margin: 0 auto;
+    }
+
+    .link{
+        color: var(--primary-color-contrast);
+        padding: 10px 0 0 0;
+        font-style: italic;
+        font-weight: 600;
+        position: relative;
+        width: 100%;
+    }
+    
+    .link::after{
+        content: '';
+        position: absolute;
+        width: 40%;
+        transform: scaleX(0);
+        height: 3px;
+        bottom: -4px;
+        left: 0;
+        background-color: var(--primary-color-contrast);
+        transform-origin: center;
+        transition: transform 0.25s ease-out;
+    }
+    
+    .link:hover::after{
+        transform: scaleX(1);
+        transform-origin: center;
+    }
+} 

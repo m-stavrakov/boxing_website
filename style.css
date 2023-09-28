@@ -213,6 +213,29 @@ h2{
     object-position: 20%;
 }
 
+.video_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.video_box--text{
+    padding: 30px 60px 10px 60px;
+    font-size: var(--font-size);
+    font-weight: 600;
+}
+
+.youtube_video{
+    border-radius: 15px;
+}
+
+.youtube_video:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 10px 20px 2px var(--primary-color-contrast);
+}
+
 /* classes section */
 
 .classes_main{
@@ -243,6 +266,10 @@ h2{
     padding: 0 20px 20px 20px;
     /* margin-bottom: 20px;
     margin-left: 40px; */
+}
+
+.follow_links{
+    margin-top: 10px;
 }
 
 .link{
@@ -469,9 +496,14 @@ h3{
 .form_contact{
     display: flex;
     justify-content: center;
-    box-shadow: 0px 5px 10px 0px var(--primary-color-contrast); 
+    /* box-shadow: 0px 5px 10px 0px var(--primary-color-contrast);  */
     border-radius: 15px;
     margin-top: 20px;
+}
+
+.form_contact:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 10px 20px 2px var(--primary-color-contrast);
 }
 
 form{
@@ -521,11 +553,6 @@ select{
     background: var(--secondary-color);
     text-transform: uppercase;
     font-weight: 600;
-}
-
-.form_contact:hover{
-    transform: translateY(-2px);
-    box-shadow: 0px 10px 20px 2px var(--primary-color-contrast);
 }
 
 /* footer */

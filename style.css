@@ -652,6 +652,11 @@ h4{
         margin: 40px auto;
         width: 90%;
     }
+
+    .classes_table{
+        align-items: center;
+        justify-content: center;
+    }
 } 
 
 @media screen and (max-width: 767px){

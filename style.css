@@ -317,7 +317,7 @@ h2{
 
 .classes_table{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
     justify-content: space-between;
     gap: 50px;
@@ -654,8 +654,17 @@ h4{
     }
 
     .classes_table{
+        flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .table_box{
+        width: 100%;
+    }
+
+    .navigation{
+        position: relative;
     }
 } 
 
@@ -739,5 +748,18 @@ h4{
 
     ul{
         font-size: 1rem;
+    }
+    .navigation{
+        position: relative;
+    }
+
+    .classes_table{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .table_box{
+        width: 100%;
     }
 }

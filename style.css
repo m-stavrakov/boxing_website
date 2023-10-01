@@ -590,6 +590,15 @@ h4{
     text-decoration: underline;
 }
 
+.copyright{
+    font-style: italic; 
+    font-size: .8rem;
+}
+
+.arrow{
+    color: var(--primary-color-contrast);
+}
+
 @media screen and (767px <= width <= 1023px){
     .nav_flex{
         align-items: center;
